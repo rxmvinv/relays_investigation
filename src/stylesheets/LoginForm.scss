@@ -1,0 +1,46 @@
+@import "globals";
+
+div.sign-in {
+  text-align: center;
+  color: #fff;
+  font-family: monospace;
+  h1 {
+    margin: auto;
+    color: #fff;
+    font-family: monospace;
+    padding: 30px 0px 50px;
+  }
+  form {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto 100px;
+    input {
+      width: 100%;
+      max-width: 280px;
+      margin: 10px 10px;
+      border-radius: 5px;
+      border: 2px solid dimgray;
+      padding: 5px;
+      font-family: monospace;
+      color: #fff;
+      background: #000;
+    }
+    input:active {
+      box-shadow: 0px 0px 10px 5px rgba(192, 192, 192, 0.3);
+    }
+    input:focus {
+      outline: none;
+      transform: scale(1.1);
+    }
+    input[type="submit"] {
+      width: 100%;
+      max-width: 70px;
+      margin: 40px 110px;
+      padding: 3px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      transform: scale(0.9);
+    }
+  }
+}

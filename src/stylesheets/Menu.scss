@@ -1,0 +1,203 @@
+@import "globals";
+
+@-webkit-keyframes expandmenu {
+  0% {opacity: 0; -webkit-transform: scale(0)}
+  100% {opacity: 1; -webkit-transform: scale(1)}
+}
+
+@keyframes expandmenu {
+  0% {opacity: 0; transform: scaleY(0)}
+  100% {opacity: 1; transform: scaleY(1)}
+}
+
+@-webkit-keyframes releasemenu {
+  0% {opacity: 1; -webkit-transform: scaleY(1)}
+  100% {opacity: 0; -webkit-transform: scaleY(0); display: none;}
+}
+
+@keyframes releasemenu {
+  0% {opacity: 1; transform: scaleY(1); }
+  100% {opacity: 0; transform: scaleY(0); display: none;}
+}
+
+div.nav-menu {
+  height: 50px;
+  background: rgba(9, 9, 9, 0.9);
+  font-family: monospace;
+  div.navigate-links {
+    float: right;
+    height: 100%;
+    a {
+      display: inline-block;
+      float: left;
+      color: #fff;
+      margin: 12px 5px auto;
+      border: 2px solid dimgray;
+      border-radius: 5px;
+      background: #000;
+      padding: 3px;
+    }
+    a:hover {
+      transform: scale(0.9);
+    }
+  }
+  div.auth-links {
+    float: right;
+    width: 100px;
+    text-align: center;
+    img {
+      width: 100%;
+      max-width: 45px;
+      padding-top: 2px;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    img:hover {
+      transform: scale(0.9);
+    }
+    div.show {
+      display: block;
+      position: absolute;
+      width: 100px;
+      background: rgba(9, 9, 9, 0.7);
+      z-index: 1;
+      margin-top: 10px;
+      border-radius: 5px;
+      padding-bottom: 10px;
+      -webkit-animation: expandmenu 0.4s 1 ease-in-out forwards;
+      animation: expandmenu 0.4s 1 ease-in-out forwards;
+      a {
+        color: #fff;
+        display: inline-block;
+        margin: 10px 10px 5px;
+        border: 2px solid dimgray;
+        border-radius: 5px;
+        background: #000;
+        padding: 3px;
+      }
+      /*HOVERS*/
+      a:hover {
+        transform: scale(0.9);
+      }
+    }
+    div.show:before {
+      content: "";
+      position: absolute;
+			left: 38px;
+			bottom: 100%;
+			width: 0;
+			height: 0;
+			border-left: 12px solid transparent;
+			border-bottom: 16px solid rgba(9, 9, 9, 0.7);
+			border-right: 12px solid transparent;
+    }
+    div.hide {
+      display: block;
+      position: absolute;
+      width: 100px;
+      background: rgba(9, 9, 9, 0.7);
+      z-index: 1;
+      margin-top: 10px;
+      border-radius: 5px;
+      padding-bottom: 10px;
+      -webkit-animation: releasemenu 0.4s 1 ease-in-out forwards;
+      animation: releasemenu 0.4s 1 ease-in-out forwards;
+      a {
+        color: #fff;
+        display: inline-block;
+        margin: 10px 10px 5px;
+        border: 2px solid dimgray;
+        border-radius: 5px;
+        background: #000;
+        padding: 3px;
+      }
+    }
+  }
+  div.user-profile {
+    float: right;
+    width: 100px;
+    text-align: center;
+    img {
+      width: 100%;
+      max-width: 45px;
+      padding-top: 2px;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    div.show {
+      display: block;
+      position: absolute;
+      width: 100%;
+      max-width: 200px;
+      background: rgba(9, 9, 9, 0.7);
+      right: 0;
+      z-index: 1;
+      margin-top: 10px;
+      border-radius: 5px;
+      h3 {
+        color: #fff;
+        margin: auto;
+      }
+      div.user-buttons {
+        a {
+          color: #fff;
+          margin: 5px 20px;
+          display: inline-block;
+          border: 2px solid dimgray;
+          border-radius: 5px;
+          background: #000;
+          padding: 3px;
+        }
+        button {
+          margin: auto auto 5px;
+          font-family: monospace;
+          border: 2px solid dimgray;
+          border-radius: 5px;
+          background: #000;
+          padding: 3px;
+          color: #fff;
+          cursor: pointer;
+        }
+      }
+    }
+    div.show:before {
+      content: "";
+      position: absolute;
+			left: 138px;
+			bottom: 100%;
+			width: 0;
+			height: 0;
+			border-left: 12px solid transparent;
+			border-bottom: 16px solid rgba(9, 9, 9, 0.9);
+			border-right: 12px solid transparent;
+    }
+    div.hide {
+      display: none;
+    }
+  }
+}
+/*
+nav {
+
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+
+  h1 {
+    display: none;
+  }
+
+  a {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    padding: .5em;
+
+    &.selected {
+      color: $red;
+    }
+  }
+}
+*/

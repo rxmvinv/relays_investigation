@@ -1,0 +1,55 @@
+@import "globals";
+
+div.relay-detailed {
+  padding-top: 50px;
+  text-align: left;
+  div.relay-details {
+    width: 100%;
+    margin: auto;
+    max-width: 1040px;
+    div.relay-fields {
+      display: block;
+      min-height: 200px;
+      height: 100%;
+      width: 100%;
+      max-width: 600px;
+      margin: auto auto 50px;
+      border-bottom: 1px solid #fff;
+      img {
+        width: 100%;
+        max-width: 180px;
+      /*  margin-left: 10px; */
+        margin: auto 30px auto 10px;
+        display: inline-block;
+        float: left;
+        border-radius: 5px;
+        border: 2px solid #fff;
+      }
+      article {
+        padding: 0px 10px;
+      /*  display: inline-block;
+        float: right; */
+        p {
+          color: #fff;
+          font-size: 16px;
+        /*  width: 100%;
+          max-width: 300px; */
+        }
+      }
+    }
+    div.relay-images {
+      display: block;
+      margin: auto auto 50px;
+      width: 100%;
+      max-width: 1040px;
+      text-align: center;
+      img {
+        width: 100%;
+        max-width: 300px;
+        margin: 8px;
+        border-radius: 5px;
+        border: 2px solid #fff;
+      }
+    }
+  }
+}

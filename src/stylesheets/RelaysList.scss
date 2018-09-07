@@ -1,0 +1,50 @@
+@import "globals";
+
+div.relays-list {
+  text-align: center;
+  font-family: monospace;
+  width: 100%;
+  max-width: 1040px;
+  height: 100%;
+  min-height: 600px;
+  margin: auto;
+  h2 {
+    margin: auto;
+    color: #fff;
+    padding: 30px 0px 50px;
+  }
+  a {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    vertical-align: bottom;
+    color: #fff;
+    padding: 0px 0px 50px;
+    img {
+      width: 100%;
+      max-width: 150px;
+      border-radius: 5px;
+      border: 2px solid #fff;
+    }
+  }
+  a:hover {
+    transform: scale(0.9);
+  }
+  a.offer-button{
+    width: 25px;
+    height: 25px;
+    position: fixed;
+
+    color: #fff;
+    border: 2px solid dimgray;
+    border-radius: 5px;
+    background: #000;
+    line-height: 25px;
+
+    display: block;
+    padding: 0;
+    margin: auto;
+    right: 5px;
+    bottom: 50%;
+  }
+}

@@ -1,0 +1,84 @@
+@import "globals";
+
+div.sign-up {
+  /*background: midnightblue;*/
+  text-align: center;
+  color: #fff;
+  font-family: monospace;
+  h1{
+    margin: auto;
+    color: #fff;
+    font-family: monospace;
+    padding: 30px 0px 50px;
+  }
+  form {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    input {
+      width: 100%;
+      max-width: 280px;
+      margin: 10px 10px;
+      border-radius: 5px;
+      border: 2px solid dimgray;
+      padding: 5px;
+      font-family: monospace;
+      color: #fff;
+      background: #000;
+    }
+    input:active {
+      box-shadow: 0px 0px 10px 5px rgba(192, 192, 192, 0.3);
+    }
+    input:focus {
+      outline: none;
+      transform: scale(1.1);
+    }
+    input[type="file" i] {
+
+    }
+    input[type="submit"] {
+      width: 100%;
+      max-width: 80px;
+      margin: 40px 100px;
+      padding: 3px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      transform: scale(0.9);
+    }
+  }
+  div.agreement {
+    width: 100%;
+    max-width: 800px;
+    p {
+      text-align: justify;
+      border-top: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      padding: 5px 5px;
+      margin: 20px auto 50px;
+      color: #fff;
+      font-family: monospace;
+      font-size: 14px;
+      span {
+        text-align: center;
+        display: block;
+      }
+    }
+  }
+  div.imgPreview {
+    div.previewText {
+      color: #fff;
+      font-family: monospace;
+    }
+    img {
+      width: 100%;
+      max-width: 45px;
+      border-radius: 30px;
+    }
+  }
+  div.captcha {
+    color: #fff;
+    font-family: monospace;
+    margin: 20px auto;
+  }
+}

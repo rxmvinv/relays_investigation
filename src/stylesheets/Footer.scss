@@ -1,0 +1,15 @@
+@import "globals";
+
+footer {
+  background: rgba(9, 9, 9, 0.9);
+  color: #fff;
+  font-family: monospace;
+  text-align: center;
+  padding: 5px 0px;
+  h3, p {
+    margin: auto;
+  }
+  a {
+    color: lightslategray;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "isLoggedIn": false,
+  "authorizedUser": { "_id": "", "login": "", "email": "", "password": "", "image": {"data": ""}},
+  "signIn": {},
+  "dataRelays": [],
+  "loadingList": false,
+  "redirToHome": false,
+  "redirToRelays": false,
+  "redirBackToRelays": false,
+  "toggle": "hide",
+  "emptyUser": {"response": {"status": ""}},
+  "currentRelay": {}
+}
